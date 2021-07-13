@@ -237,29 +237,15 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
   
   body {
     font-family: 'Mukta', sans-serif;
-    font-size: 125%;
-    background: #667db6;                                                                       /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);          /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size: 400% 400%;
+    font-size: 125%;                                                                      /* fallback for old browsers */
+    background: #4378D9;        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100% 100%;
     animation: gradient 25s ease infinite;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     color: #fff;
     position: relative;
-  }
-
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
   }
   
   a {
@@ -339,6 +325,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
   
   .menuButton:focus {
     border: 2px solid #48b8ef;
+    border-radius: 15px;
   }
   
   .menuButton .linesContainer {
@@ -381,7 +368,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
             justify-content: space-between;
     width: 105px;
     height: 100vh;
-    background-color: #0093c875;
+    background-color: #ffffff00;
     position: fixed;
     color: white;
     -webkit-transition: all 0.3s ease-in;
@@ -410,7 +397,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     -webkit-transition-duration: 0.25s;
             transition-duration: 0.25s;
     border-radius: 6px;
-    width: 100%;
+    width: 80%;
     position: relative;
   }
   
@@ -429,6 +416,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
   
   .sideMenu nav a:hover, .sideMenu nav a:focus {
     background-color: #00a6e2;
+    border-radius: 25px;
     -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
             box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
   }
@@ -1142,4 +1130,33 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
   
   .logo{
     margin-top: 10px;
+  }
+
+  .back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 25px;
+    bottom: 25px;
+    background: #0678e3;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    transition: all 0.4s;
+  }
+  
+  .back-to-top i {
+    font-size: 28px;
+    color: #fff;
+    line-height: 0;
+  }
+  
+  .back-to-top:hover {
+    background: #fff;
+    color: #0678e3;
+  }
+  
+  .back-to-top.active {
+    visibility: visible;
+    opacity: 1;
   }
