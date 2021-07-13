@@ -317,7 +317,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     font-weight: 500;
     letter-spacing: 2px;
     font-size: 1.6rem;
-    padding-left: 180px;
+    text-align: center;
   }
   
   .techStack {
