@@ -305,9 +305,11 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
   .sectionHead hr {
     width: 10%;
     margin-left: 0%;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border: 0;
     border-top: 1px solid #333;
-    height: 1px;
+    height: 2px;
   }
   
   .sectionHead h2 {
