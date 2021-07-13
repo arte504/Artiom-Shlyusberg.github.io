@@ -306,9 +306,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     width: 10%;
     margin-left: 0%;
     border: 0;
-    clear:both;
-    display:block;              
-    background-color: #333;
+    border-top: 1px solid #333;
     height: 1px;
   }
   
